@@ -8,11 +8,11 @@ import java.util.List;
 public class Initiater {
     String _name;
     public Initiater(String name) {
-        _name = name;
+        this._name = name;
     }
-    List<HelloListener> listeners = new ArrayList<HelloListener>();
+    List<HelloListener> listeners = new ArrayList<>();
 
-    public void addListener(HelloListener toAdd) {
+   public void addListener(HelloListener toAdd) {
         listeners.add(toAdd);
     }
     public void sayHello() {
